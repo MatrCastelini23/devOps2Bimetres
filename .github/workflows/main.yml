@@ -1,0 +1,14 @@
+name: Primeira Pipeline
+
+on:
+  push:
+
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar código
+        uses:  actions/checkout@v4
+
+      - name: Executar teste
+        run: echo "Pipeline funcionando"
