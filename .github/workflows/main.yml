@@ -2,7 +2,9 @@ name: Primeira Pipeline
 
 on:
   push:
-
+    branches: ["main"]
+  
+  workflow_dispatch:
 jobs:
   teste:
     runs-on: ubuntu-latest
